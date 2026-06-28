@@ -40,7 +40,8 @@
       padding-top: max(24px, env(safe-area-inset-top));
       padding-bottom: max(24px, env(safe-area-inset-bottom));
       position: relative;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     body::before,
@@ -328,6 +329,7 @@
     @media (max-width: 820px) {
       body {
         align-items: flex-start;
+        justify-content: flex-start;
       }
 
       .shell {
